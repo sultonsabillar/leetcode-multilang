@@ -13,10 +13,23 @@ func twoSumBruteForce(nums []int, target int) []int {
 	return nil
 }
 
+func twosumHashmap(nums []int, target int) []int {
+	seen := make(map[int]int) // map[number] = index
+
+	for i, num := range nums {
+		complement := target - num
+		if idx, found := seen[complement]; found {
+			return []int{idx, i}
+		}
+		seen[num] = i
+	}
+	return nil
+}
+
 func main() {
 	nums := []int{2, 7, 11, 15}
 	target := 9
 
-	result := twoSumBruteForce(nums, target)
-	fmt.Println("Output:", result) // Output: [0 1]
+	fmt.Println("Brute Force", twoSumBruteForce(nums, target))
+	fmt.Println("Hashmap", twosumHashmap(nums, target))
 }
