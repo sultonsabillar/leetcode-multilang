@@ -26,3 +26,9 @@ leetcode-multilang/
 ├── go/           # solusi Go
 ├── cpp/          # solusi C++
 └── README.md     # dokumentasi ini
+
+## 📚 Daftar Soal LeetCode
+
+| No  | Judul Soal |
+|-----|------------|
+| 1   | [Two Sum](https://leetcode.com/problems/two-sum/description/) |
