@@ -1,8 +1,3 @@
-/**
- * @param {number[]} nums
- * @param {number} target
- * @return {number[]}
- */
 function twoSum(nums, target) {
     const map = new Map();
     for (let i = 0; i < nums.length; i++) {
@@ -16,4 +11,4 @@ function twoSum(nums, target) {
 }
 
 const result = twoSum([2, 7, 11, 15], 9);
-console.log(result); // Output: [0, 1]
+console.log(result);
